@@ -1,0 +1,96 @@
+.header {
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    padding-block: 12.3px;
+    justify-content: space-between;
+    align-items: center;
+
+    &-right {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 16px;
+    }
+
+    &-text-button {
+      border: none;
+      background-color: inherit;
+      font-weight: 400;
+      font-size: 14px;
+
+      &--link {
+        padding-inline: 12px;
+        align-items: center;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &-button {
+      border: none;
+      padding-block: 16px;
+      width: 102px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #fff;
+      background-color: $text-color-main;
+
+      &:hover {
+        background-color: $text-color-hover;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__center {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-top: 90px;
+    padding-bottom: 170px;
+
+    &-text--main {
+      font-size: 62px;
+      font-weight: 700;
+    }
+
+    &-text--paragraph {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  &__nav {
+    &-list {
+      display: flex;
+      flex-direction: row;
+      gap: 84px;
+      justify-content: center;
+      align-items: center;
+
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      padding-block: 28px;
+    }
+
+    &-link {
+      color: $text-color-main;
+      text-decoration: none;
+      transition: color 0.3s;
+
+      &:hover {
+        color: $text-color-hover;
+        font-weight: 700;
+      }
+    }
+  }
+}

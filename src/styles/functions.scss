@@ -1,0 +1,41 @@
+.functions {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(1, 1fr);
+
+  padding-top: 62px;
+
+  &__icon {
+    width: 70px;
+    height: 50px;
+  }
+
+  &__title {
+    color: $text-color-main;
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: $text-gray;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+  }
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

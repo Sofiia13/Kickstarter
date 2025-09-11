@@ -1,7 +1,15 @@
 @import 'utils';
 @import 'fonts';
 @import 'typography';
+@import 'header';
+@import 'functions';
+@import 'photo';
 
 body {
-  background: $c-gray;
+  background-color: $bg-color;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding-inline: 123px;
+  padding-block: 30px;
+  box-sizing: border-box;
 }
