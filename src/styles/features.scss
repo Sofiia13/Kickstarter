@@ -1,0 +1,60 @@
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__title {
+    font-size: 56px;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 70px;
+    margin: 0;
+  }
+
+  &__image {
+    width: 543px;
+    height: auto;
+    position: absolute; 
+    bottom: 1px; 
+    right: 46px; 
+  }
+
+  &__container {
+    background-color: $bg-blue;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    padding-bottom: 60px;
+    padding-left: 102px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    padding-top: 60px;
+  }
+
+  &__name {
+    color: $text-blue;
+    margin: 0;
+  }
+
+  &__list {
+    font-size: 16px;
+    font-weight: 400;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding-left: 20px;
+  }
+}
