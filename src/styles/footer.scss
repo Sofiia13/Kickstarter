@@ -1,0 +1,55 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  .footer__button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  &__links {
+    padding-top: 86px;
+    padding-bottom: 60px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  &__copyright {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 400;
+    color: $placeholder-color;
+  }
+}
