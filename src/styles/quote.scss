@@ -1,0 +1,40 @@
+.quote {
+  background-image: url('/src/images/quotes.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 233px 192px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  
+  align-items: center; 
+
+  padding-inline: 204px;
+  padding-bottom: 170px;
+  
+
+  &__text {
+    padding-block: 42px;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__person {
+    text-align: center;
+  }
+
+  &__author {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: bold;
+  }
+
+  &__role {
+    font-size: 14px;
+    font-weight: 400;
+    color: $text-gray;
+  }
+}
