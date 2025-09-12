@@ -63,7 +63,21 @@
     padding-block: 17px;
     padding-inline: 42.5px;
 
+    cursor: pointer;
+
     width: auto;
     align-self: flex-start;
+
+    &:hover {
+      background-color: $text-blue;
+    }
+  }
+
+  @media (max-width: 1279px) and (min-width: 640px) {
+    padding-block: 140px;
+
+    &__title {
+      font-size: 36px;
+    }
   }
 }

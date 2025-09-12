@@ -43,7 +43,48 @@
     }
 
     &:hover::after {
-      width: 100%; // при наведенні можна розширити на всю ширину
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1279px) and (min-width: 640px) {
+  .section {
+    flex-direction: row;
+    width: calc(100% + 34px);
+    align-items: stretch;
+
+    img {
+      width: 50%; // половина ширини контейнера
+      height: 100%; // заповнює висоту
+      object-fit: cover; // обрізається по краю
+    }
+
+    &:nth-child(1) {
+      margin-left: -34px; // прибираємо лівий padding
+    }
+
+    &:nth-child(2) {
+      margin-left: 0;          // не чіпаємо лівий
+      margin-right: -34px;     // прибираємо правий padding
+      width: calc(100% + 34px); // важливо для правого марджину
+    }
+
+    &:nth-child(1) img {
+      object-position: left center;
+    }
+
+    &:nth-child(2) img {
+      object-position: right center;
+    }
+
+    &__title {
+      font-size: 36px;
+    }
+
+    &__description {
+      flex: 1; // текст займає другу половину
+      padding: 0 20px; // за бажанням можна трохи паддінгу додати
     }
   }
 }

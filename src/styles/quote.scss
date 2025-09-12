@@ -6,12 +6,11 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: center;  
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
 
   padding-inline: 204px;
   padding-bottom: 170px;
-  
 
   &__text {
     padding-block: 42px;
@@ -36,5 +35,10 @@
     font-size: 14px;
     font-weight: 400;
     color: $text-gray;
+  }
+
+  @media (max-width: 1279px) and (min-width: 640px) {
+    padding-inline: 10px;
+    padding-bottom: 140px;
   }
 }

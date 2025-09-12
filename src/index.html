@@ -13,7 +13,10 @@
     />
   </head>
   <body>
-    <script src="scripts/main.js"></script>
+    <script
+      src="scripts/main.js"
+      defer
+    ></script>
     <header class="header">
       <div class="header__top">
         <div class="header__logo">
@@ -38,6 +41,16 @@
           </div>
           <button class="header__top-button">BUY</button>
         </div>
+
+        <button
+          class="header__burger"
+          aria-label="menu"
+        >
+          <img
+            src="/src/images/icons/icon-burger-menu.svg"
+            alt="burger menu"
+          />
+        </button>
       </div>
 
       <div class="header__center">
@@ -53,6 +66,7 @@
         <img
           src="/src/images/main_image_desktop.png"
           alt="main_image"
+          class="header__image"
         />
       </div>
 
