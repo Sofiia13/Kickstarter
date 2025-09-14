@@ -11,12 +11,16 @@
     margin: 0;
   }
 
+  &__slider {
+    display: none;
+  }
+
   &__image {
     width: 543px;
     height: auto;
-    position: absolute; 
-    bottom: 1px; 
-    right: 46px; 
+    position: absolute;
+    bottom: 1px;
+    right: 46px;
   }
 
   &__container {
@@ -41,6 +45,8 @@
 
   &__name {
     color: $text-blue;
+    font-size: 34px;
+    font-weight: 700;
     margin: 0;
   }
 
@@ -56,5 +62,47 @@
     gap: 10px;
 
     padding-left: 20px;
+  }
+
+  @media (max-width: 1279px) and (min-width: 640px) {
+    &__title {
+      font-size: 30px;
+    }
+
+    &__name {
+      font-size: 18px;
+    }
+
+    &__list {
+      font-size: 14px;
+    }
+
+    &__item {
+      display: none;
+
+      &--visible {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+      }
+    }
+
+    &__slider {
+      display: block;
+      padding-top: 50px;
+      padding-bottom: 123px;
+      align-self: center;
+      z-index: 1;
+      position: relative;
+    }
+
+    &__image {
+      width: 400px;
+      height: auto;
+      position: absolute;
+      bottom: 1px;
+      right: 20px;
+    }
   }
 }
