@@ -110,6 +110,8 @@
       padding-top: 90px;
       padding-bottom: 140px;
 
+      justify-content: flex-end;
+
       &-text--main {
         font-size: 48px;
       }
@@ -138,11 +140,5 @@
       }
     }
 
-    &__image {
-      width: 550px;
-      height: auto;
-      object-fit: cover;
-      object-position: left center;
-    }
   }
 }
