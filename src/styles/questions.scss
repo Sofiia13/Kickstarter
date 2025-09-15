@@ -80,4 +80,22 @@
       font-size: 36px;
     }
   }
+
+  @media (max-width: 639px) {
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 27px;
+
+    padding-block: 90px;
+
+    &__title {
+      font-size: 30px;
+    }
+
+    &__form {
+      gap: 20px;
+      width: 100%;
+    }
+  }
 }

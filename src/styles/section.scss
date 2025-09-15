@@ -12,6 +12,12 @@
     justify-content: flex-start;
   }
 
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
   &__title {
     font-weight: 700;
     font-size: 56px;
@@ -82,7 +88,7 @@
   }
 
   .section--left-image .section__image-full {
-    margin-left: -34px; 
+    margin-left: -34px;
     margin-right: 0;
     object-position: left center;
   }
@@ -90,7 +96,44 @@
   /* Картинка справа */
   .section--right-image .section__image-full {
     margin-left: 0;
-    margin-right: -34px; 
+    margin-right: -34px;
     object-position: right center;
   }
 }
+
+@media (max-width: 639px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    &__title {
+      order: 0; // перший
+      text-align: center;
+      font-size: 24px;
+    }
+
+    &__image-full {
+      order: 2; // другий
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    &__description {
+      order: 3; // третій
+      text-align: center;
+      width: 100%;
+    }
+
+    &__link {
+      display: inline-block;
+      margin-top: 12px;
+    }
+  }
+}
+

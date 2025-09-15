@@ -41,4 +41,15 @@
     padding-inline: 10px;
     padding-bottom: 140px;
   }
+
+  @media (max-width: 639px) {
+    padding-inline: 0;
+    background-size: 208px 171px;
+
+    &__text {
+      padding-top: 50px;
+      padding-bottom: 30px;
+      font-size: 14px;
+    }
+  }
 }
