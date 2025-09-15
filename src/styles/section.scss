@@ -1,10 +1,4 @@
 .section {
-  // display: flex;
-  // flex-direction: row;
-  // gap: 30px;
-  // padding-bottom: 170px;
-  // justify-content: flex-start;
-
   display: grid;
   grid-template-areas: 'image description';
   gap: 30px;
@@ -57,12 +51,7 @@
   .section {
     align-items: stretch;
 
-    // &__image-full {
-    //   width: calc(100% + 34px); // додаємо ширину назад
-    //   margin-left: -34px; // компенсуємо глобальний padding зліва
-    //   margin-right: -34px; // компенсуємо глобальний padding справа
-    //   padding: 0; // прибираємо власні паддінги
-    // }
+    
 
     &__image-full {
       width: calc(100% + 34px);
@@ -73,12 +62,12 @@
       width: 100%;
       height: auto;
       object-fit: cover;
-      object-position: center; // або left/right center
-      margin: 0; // прибираємо відступи картинки
+      object-position: center; 
+      margin: 0; 
     }
 
     &__description {
-      padding: 20px; // текст можна залишити з відступами
+      padding: 20px; 
     }
 
     &__title {
@@ -92,7 +81,6 @@
     object-position: left center;
   }
 
-  /* Картинка справа */
   .section--right-image .section__image-full {
     margin-left: 0;
     margin-right: -34px;

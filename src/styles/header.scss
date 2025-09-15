@@ -107,11 +107,10 @@
 
   @media (max-width: 1279px) and (min-width: 640px) {
     &__top {
-
-    &-right {
-      gap: 30px;
+      &-right {
+        gap: 30px;
+      }
     }
-  }
 
     &__center {
       padding-top: 90px;
@@ -146,6 +145,63 @@
         height: 24px;
       }
     }
+  }
 
+  @media (max-width: 639px) {
+    &__top {
+      &-right > *:not(.header__burger) {
+        display: none;
+      }
+    }
+
+    &__center {
+      padding-top: 0;
+      padding-bottom: 110px;
+      flex-direction: column;
+
+      justify-content: flex-end;
+
+      &-text {
+        order: 2;
+      }
+
+      &-text--main {
+        font-size: 40px;
+      }
+    }
+
+    &__image-wrapper {
+      order: 1;
+      width: 100%;
+    }
+
+    &__image-wrapper img {
+      width: 100%; /* картинка займає всю ширину контейнера */
+      height: auto; /* зберігає пропорції */
+      display: block; /* прибирає зайві пробіли під img */
+    }
+
+    &__nav {
+      display: none;
+    }
+
+    &__burger {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 40px;
+      height: 40px;
+
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
   }
 }
