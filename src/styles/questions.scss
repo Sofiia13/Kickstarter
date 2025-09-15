@@ -36,6 +36,11 @@
       color: $placeholder-color;
       font-weight: 400;
     }
+
+    &:focus {
+      outline: none;  
+      border-color: $text-blue;
+    }
   }
 
   &__textarea {
@@ -53,6 +58,11 @@
       font-size: 16px;
       color: $placeholder-color;
       font-weight: 400;
+    }
+
+    &:focus {
+      outline: none;  
+      border-color: $text-blue;
     }
   }
 

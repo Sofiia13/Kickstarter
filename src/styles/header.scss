@@ -25,10 +25,16 @@
       background-color: inherit;
       font-weight: 400;
       font-size: 14px;
+      color: $border-color;
+
+      &--active {
+        color: $text-color-main;
+      }
 
       &--link {
         padding-inline: 12px;
         align-items: center;
+        color: $text-secondary-color;
       }
 
       &:hover {
@@ -74,8 +80,7 @@
     &__image {
       max-width: 100%;
       height: auto;
-      object-fit: cover;
-      object-position: right center;
+      object-fit: contain;
     }
   }
 
@@ -115,12 +120,34 @@
     &__center {
       padding-top: 90px;
       padding-bottom: 140px;
+      gap: 19px;
 
-      justify-content: flex-end;
+      justify-content: center;
+
+      min-width: 0;
+      flex-wrap: nowrap;
 
       &-text--main {
         font-size: 48px;
       }
+    }
+
+    &__image-wrapper {
+      flex: 1 1 auto;
+      min-width: 380px;
+      max-width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    &__image {
+      width: min(420px, 100%);
+      height: auto;
+      max-width: 100%;
+      display: block;
+      object-fit: contain;
     }
 
     &__nav {
@@ -149,6 +176,8 @@
 
   @media (max-width: 639px) {
     &__top {
+      padding-block: 24px;
+
       &-right > *:not(.header__burger) {
         display: none;
       }
@@ -176,9 +205,9 @@
     }
 
     &__image-wrapper img {
-      width: 100%; /* картинка займає всю ширину контейнера */
-      height: auto; /* зберігає пропорції */
-      display: block; /* прибирає зайві пробіли під img */
+      width: 100%;
+      height: auto;
+      display: block;
     }
 
     &__nav {
