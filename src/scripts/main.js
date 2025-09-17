@@ -35,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   burger.addEventListener('click', openMenu);
+
   closeBtn.addEventListener('click', (e) => {
     e.preventDefault();
     closeMenu();

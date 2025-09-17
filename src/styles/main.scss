@@ -11,6 +11,10 @@
 @import 'footer';
 @import 'menu';
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $bg-color;
   font-family: Roboto, Arial, Helvetica, sans-serif;
