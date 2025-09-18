@@ -12,32 +12,36 @@
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 56px;
     margin: 0;
+    font-size: 56px;
+    font-weight: 700;
   }
 
   &__text {
+    margin-bottom: 30px;
     font-size: 16px;
     font-weight: 400;
     color: $text-gray;
-    margin-bottom: 30px;
   }
 
   &__link {
     position: relative;
-    text-decoration: none;
-    color: $blue-color;
     font-weight: 500;
+    color: $blue-color;
+    text-decoration: none;
 
     &::after {
       content: '';
+
       position: absolute;
-      left: 0;
       bottom: -4px;
+      left: 0;
+
       width: 50%;
       height: 2px;
+
       background-color: $blue-color;
+
       transition: width 0.3s;
     }
 
@@ -51,8 +55,6 @@
   .section {
     align-items: stretch;
 
-    
-
     &__image-full {
       width: calc(100% + 34px);
       padding: 0;
@@ -61,13 +63,14 @@
     &__image {
       width: 100%;
       height: auto;
+      margin: 0;
+
       object-fit: cover;
-      object-position: center; 
-      margin: 0; 
+      object-position: center;
     }
 
     &__description {
-      padding: 20px; 
+      padding: 20px;
     }
 
     &__title {
@@ -76,14 +79,14 @@
   }
 
   .section--left-image .section__image-full {
-    margin-left: -34px;
     margin-right: 0;
+    margin-left: -34px;
     object-position: left center;
   }
 
   .section--right-image .section__image-full {
-    margin-left: 0;
     margin-right: -34px;
+    margin-left: 0;
     object-position: right center;
   }
 }
@@ -94,7 +97,6 @@
       'title'
       'image'
       'description';
-
     padding-bottom: 110px;
 
     &__description {
@@ -112,9 +114,9 @@
     }
 
     &__image-full img {
+      display: block;
       width: 100%;
       height: auto;
-      display: block;
     }
 
     &__text,

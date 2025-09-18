@@ -1,24 +1,25 @@
 .quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-bottom: 170px;
+  padding-inline: 204px;
+
   background-image: url('/src/images/quotes.png');
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 233px 192px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  padding-inline: 204px;
-  padding-bottom: 170px;
-
   &__text {
+    margin: 0;
     padding-block: 42px;
+
+    font-size: 24px;
     font-weight: 700;
     font-style: bold;
-    font-size: 24px;
     text-align: center;
-    margin: 0;
   }
 
   &__person {
@@ -38,8 +39,8 @@
   }
 
   @media (max-width: 1279px) and (min-width: 640px) {
-    padding-inline: 10px;
     padding-bottom: 140px;
+    padding-inline: 10px;
   }
 
   @media (max-width: 639px) {

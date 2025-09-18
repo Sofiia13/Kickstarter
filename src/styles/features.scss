@@ -4,11 +4,12 @@
   gap: 30px;
 
   &__title {
+    margin: 0;
+
     font-size: 56px;
     font-weight: 700;
     font-style: bold;
     line-height: 70px;
-    margin: 0;
   }
 
   &__slider {
@@ -16,52 +17,52 @@
   }
 
   &__image {
+    position: absolute;
+    right: 46px;
+    bottom: 1px;
+
     width: 543px;
     height: auto;
-    position: absolute;
-    bottom: 1px;
-    right: 46px;
   }
 
   &__container {
-    background-color: $bg-blue;
+    position: relative;
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
+    box-sizing: border-box;
     padding-bottom: 60px;
     padding-left: 102px;
-    box-sizing: border-box;
-    position: relative;
+
+    background-color: $bg-blue;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
     gap: 30px;
-
     padding-top: 60px;
   }
 
   &__name {
-    color: $text-blue;
+    margin: 0;
     font-size: 34px;
     font-weight: 700;
-    margin: 0;
+    color: $text-blue;
   }
 
   &__list {
-    font-size: 16px;
-    font-weight: 400;
-
-    margin: 0;
-    padding: 0;
-
     display: flex;
     flex-direction: column;
     gap: 10px;
 
+    margin: 0;
+    padding: 0;
     padding-left: 20px;
+
+    font-size: 16px;
+    font-weight: 400;
   }
 
   @media (max-width: 1279px) and (min-width: 640px) {
@@ -94,20 +95,23 @@
     }
 
     &__slider {
+      position: relative;
+      z-index: 1;
+
       display: block;
+      align-self: center;
+
       padding-top: 50px;
       padding-bottom: 123px;
-      align-self: center;
-      z-index: 1;
-      position: relative;
     }
 
     &__image {
+      position: absolute;
+      right: 20px;
+      bottom: 1px;
+
       width: 400px;
       height: auto;
-      position: absolute;
-      bottom: 1px;
-      right: 20px;
     }
   }
 
@@ -146,24 +150,27 @@
     &__wrapper {
       display: flex;
       flex-direction: column;
-      align-items: center;
       gap: 50px;
+      align-items: center;
+
       width: 100%;
     }
 
     &__slider {
-      display: block;
-      margin: 0 auto;
       position: relative;
       z-index: 1;
+      display: block;
+      margin: 0 auto;
     }
 
     &__image {
+      position: relative;
+
       display: block;
+
       max-width: 80%;
       height: auto;
       margin: 0 auto;
-      position: relative;
     }
   }
 }

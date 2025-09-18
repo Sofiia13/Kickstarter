@@ -1,8 +1,7 @@
 .functions {
   display: grid;
-  gap: 30px;
   grid-template-columns: repeat(4, 1fr);
-
+  gap: 30px;
   padding-top: 62px;
 
   &__icon {
@@ -11,23 +10,24 @@
   }
 
   &__title {
-    color: $text-color-main;
-    font-weight: 700;
     font-size: 22px;
+    font-weight: 700;
+    color: $text-color-main;
   }
 
   &__text {
-    text-align: center;
     font-size: 14px;
     font-weight: 400;
     color: $text-gray;
+    text-align: center;
   }
 
   &__item {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     align-items: center;
+    justify-content: flex-start;
+
     height: 100%;
   }
 
@@ -40,8 +40,8 @@
   }
 
   @media (max-width: 639px) {
-    padding-top: 0;
     grid-template-columns: 1fr;
+    padding-top: 0;
 
     &__item {
       display: none;
